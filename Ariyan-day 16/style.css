@@ -1,0 +1,59 @@
+.topbar{
+    background-color: #9e5bba;
+    padding: 0 10px;
+}
+.topbar .left-p{
+    padding: 5px 5px 0 5px;
+}
+.topbar-right{
+    float:right;
+}
+.topbar-right div{
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #ffffffff;
+    height: 45px;
+    padding: 5px 5px 0 5px;
+}
+.topbar-right p{
+    display: inline-block;
+    float: right;
+    padding: 5px 5px 0 5px;
+}
+/* logo part start */
+.logo{
+    height: 110px;
+}
+.logo_left{
+    line-height: 110px ;
+}
+.logo_search{
+    padding-top: 45px;
+}
+.logo_search input{
+    width: 70%;
+    border: 1px solid#ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+}
+.logo_search button{
+    border: 1px;
+    border-radius:5px ;
+    padding: 12px;
+    font-weight: 7px;
+    font-size: bold;
+}
+.menu1 ul li a {
+    font-size: 14px !important;
+}
+/* .menu_item li a*/
+.banner img{
+    border: 1px solid #9e5bba;
+    padding: 5px;
+}
+/* hero part end */
+.slider img{
+    width: 100%;
+    height: 220px;
+} 
