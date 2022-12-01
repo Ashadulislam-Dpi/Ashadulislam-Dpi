@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="even1">event one</p>
+    <p id="even2">event one</p>
+    <p id="even3">event one</p>
+    <p id="even4">event one</p>
+    <p id="even5">event one</p>
+    <div id="even6">event TWO</div>
+    <p id="date">date goes here</p>
+
+    <button onclick="document.getElementById('even1').innerHTML='HELLO'">Click ME</button>
+    <button onmouseover="document.getElementById('even2').innerHTML='HELLO'">Click ME</button>
+    <button onmouseout="document.getElementById('even3').innerHTML='HELLO'">Click ME</button>
+    <button onkeydown="document.getElementById('even4').innerHTML='HELLO'">Click ME</button>
+    <button onload="document.getElementById('even5').innerHTML='HELLO'">Click ME</button>
+    <button onclick="sum()">click me</button>
+   <button onclick="showdate()">showdate</button>
+
+
+    <script>
+        const cars = new Array("Saab", "Volvo", "BMW");
+        document.getElementById("demo").innerHTML = cars[1];
+
+        // object
+        var person = {
+            firstName:"jABEN",
+            lastname:"Rahman",
+            Subject:"CSE",
+            Department:"Computer",
+            name:function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById("demo2").innerHTML=person.Subject;
+        document.getElementById("demo3").innerHTML=person.name();
+
+        // event
+        function sum()
+        {
+            var x= 10;
+            var y= 20;
+            var z= x+y;
+         
+            document.getElementById("even6").innerHTML =z;
+        }
+            // date
+            function showdate(){
+                document.getElementById("date").innerHTML = new Date();
+            }
+           
+        </script>
+    
+</body>
+</html>
